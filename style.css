@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+/* css reset based on https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    background-color: lightsteelblue;
+    font-family: Montserrat, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.etch-grid {
+    display: flex;
+    width: 960px;
+    height: 720px;
+    border: 2px solid black; 
+}
+
+.footer {
+    height: 32px;
+}
