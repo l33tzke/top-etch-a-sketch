@@ -31,9 +31,24 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 .etch-grid {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 960px;
     height: 720px;
-    border: 2px solid black; 
+    border: 2px solid black;
+    background-color: white;
+    box-sizing: content-box;
+}
+
+.etch-pixel {
+    width: 60px;
+    height: 45px;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+.painted-pixel {
+    background-color: black;
 }
 
 .footer {
