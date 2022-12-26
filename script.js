@@ -1,3 +1,7 @@
+function trigger(e) {
+    e.srcElement.classList.add('painted-pixel')
+}
+
 
 function init() {
     let etchGrid = document.querySelector('.etch-grid');
@@ -6,10 +10,10 @@ function init() {
             let div = document.createElement('div');
             div.id = "pixel" + i + "-" + j;
             div.classList.add('etch-pixel');
+            div.addEventListener("mouseenter", trigger, {once: true});
             etchGrid.appendChild(div);
         }
     }
 }
 
 init();
-// console.log(etchGrid);
